@@ -24,5 +24,5 @@ string[] GetStringsWithRequiredLength(string[] inputArray, int maxLength)
 }
 
 string[] sourceArray = FillArray(50);
-string[] resultString = GetStringsWithRequiredLength(sourceArray, 2);
+string[] resultString = GetStringsWithRequiredLength(sourceArray, 3);
 Console.WriteLine($"{string.Join(", ", resultString)}");
