@@ -26,31 +26,15 @@ class Note:
     # def save_note(note):
     #     file_name = input("Введите имя файла для сохранения: ") + ".json"
     #     with open(file_name, 'w') as outfile:
-    #         json.dump(note.__dict__, outfile)
+    #         json.dump(note.__dict__, outfile)  #TO DO Learn!
     #     return note
 
     def save_note(note):
         file_name = input("Введите имя файла для сохранения: ") + ".json"
         with open(file_name, 'a', encoding='utf-8') as outfile:
-            # outfile.seek(0)
-            # json.dump(note.to_string(), outfile, ensure_ascii=False)
-            json.dump(note.__dict__, outfile)
-            # json.dump('\n', outfile)
-          # return note
+            json.dump(note.to_string(), outfile, ensure_ascii=False)
+            json.dump('\n', outfile)
         outfile.close
-        return file_name  # возвращаем название файла
-
-    def del_note(note, file_name):
-        with open(file_name, 'r', encoding='utf-8') as f_json:
-            # outfile.seek(0)
-            data = json.load(f_json)
-            print(data)
-            print(note.id)
-            # del data[note.id]
-        #     with open(file_name, 'w', encoding='utf-8') as f_json:
-        #         json.dump(data, f_json)
-        # f_json.close
-
 
     def edit_note(self):
         self.title = self.add_title()

@@ -16,9 +16,7 @@ def show_notes(dictionary_of_notes: dict) -> None:
             print("-------------------")
 
         elif chose == 2:
-            del_id = int(input('Введи id заметки:\n'))
-            dictionary_of_notes[del_id].del_note('test.json')
-            # del dictionary_of_notes[int(input('Введи id заметки:\n'))]
+            del dictionary_of_notes[int(input('Введи id заметки:\n'))]
 
         elif chose == 3:
             dictionary_of_notes[int(input('Введи id заметки: '))].edit_note()
@@ -29,13 +27,4 @@ def show_notes(dictionary_of_notes: dict) -> None:
         print("-------------------")
         print("Заметки отсутствуют")
         print("-------------------")
-
-
-# def save_note(note):
-#     file_name = input("Введите имя файла для сохранения: ") + ".json"
-#     with open(file_name, 'a', encoding='utf-8') as outfile:
-#             # outfile.seek(0)
-#         json.dump(note.to_string(), outfile, ensure_ascii=False)
-#         json.dump('\n', outfile)
-#           # return note
-#     outfile.close
+        

@@ -54,13 +54,3 @@ while True:
         break
     else:  # (select == 4):
         break
-
-# first = Note()
-# first.display_info()
-# first.save_note()
-# first.edit_note()
-
-# second = Note()
-# second.display_info()
-# second.save_note()
-
