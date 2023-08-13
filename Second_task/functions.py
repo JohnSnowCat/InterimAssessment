@@ -1,5 +1,3 @@
-import Note
-
 def show_notes(dictionary_of_notes: dict) -> None:
     if len(dictionary_of_notes) != 0:
         for n in dictionary_of_notes:
@@ -27,4 +25,3 @@ def show_notes(dictionary_of_notes: dict) -> None:
         print("-------------------")
         print("Заметки отсутствуют")
         print("-------------------")
-        
